@@ -1,0 +1,2124 @@
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295283 is handled. Duration 303 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295284 is handled. Duration 549 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295285 is handled. Duration 95 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295286 is not handled. Duration 0 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295286 by bot id=7295199191
+NameError: name 'kb' is not defined
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 19, in start
+    keyboard = types.ReplyKeyboardMarkup(keyboard=kb)
+                                                  ^^
+NameError: name 'kb' is not defined
+INFO:aiogram.event:Update id=732295287 is not handled. Duration 0 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295287 by bot id=7295199191
+NameError: name 'kb' is not defined
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 19, in start
+    keyboard = types.ReplyKeyboardMarkup(keyboard=kb)
+                                                  ^^
+NameError: name 'kb' is not defined
+INFO:aiogram.event:Update id=732295288 is not handled. Duration 0 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295288 by bot id=7295199191
+NameError: name 'kb' is not defined
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 19, in start
+    keyboard = types.ReplyKeyboardMarkup(keyboard=kb)
+                                                  ^^
+NameError: name 'kb' is not defined
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295289 is handled. Duration 269 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295290 is handled. Duration 361 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295291 is not handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295292 is not handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295293 is not handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295294 is not handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295295 is not handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295296 is not handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295297 is not handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295298 is not handled. Duration 0 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295299 is handled. Duration 405 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295300 is handled. Duration 295 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295301 is not handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295302 is not handled. Duration 0 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295303 is handled. Duration 302 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295304 is handled. Duration 131 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295305 is not handled. Duration 0 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295306 is handled. Duration 309 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295307 is not handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295308 is not handled. Duration 292 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295308 by bot id=7295199191
+AttributeError: 'User' object has no attribute 'text'
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 31, in without_puree
+    money = message.from_user.text
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/pydantic/main.py", line 828, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'User' object has no attribute 'text'
+INFO:aiogram.event:Update id=732295309 is not handled. Duration 0 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295310 is not handled. Duration 303 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295310 by bot id=7295199191
+AttributeError: 'Message' object has no attribute 'message'
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 31, in without_puree
+    money = message.message.text
+            ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/pydantic/main.py", line 828, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Message' object has no attribute 'message'. Did you mean: 'message_id'?
+INFO:aiogram.event:Update id=732295311 is not handled. Duration 1 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295312 is handled. Duration 273 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295313 is not handled. Duration 1 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295314 is not handled. Duration 266 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295314 by bot id=7295199191
+AttributeError: 'Message' object has no attribute 'message'
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 31, in without_puree
+    money = message.message.text
+            ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/pydantic/main.py", line 828, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Message' object has no attribute 'message'. Did you mean: 'message_id'?
+INFO:aiogram.event:Update id=732295315 is not handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295316 is not handled. Duration 165 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295316 by bot id=7295199191
+AttributeError: 'Message' object has no attribute 'message'
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 31, in without_puree
+    money = message.message.text
+            ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/pydantic/main.py", line 828, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'Message' object has no attribute 'message'. Did you mean: 'message_id'?
+INFO:aiogram.event:Update id=732295317 is not handled. Duration 0 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295318 is handled. Duration 261 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295319 is not handled. Duration 1 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295320 is handled. Duration 252 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295321 is not handled. Duration 0 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295322 is handled. Duration 787 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295323 is handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295324 is handled. Duration 1 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295325 is handled. Duration 257 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295326 is handled. Duration 400 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295327 is not handled. Duration 0 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295327 by bot id=7295199191
+ValueError: invalid literal for int() with base 10: '/minus'
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 42, in minus
+    money = int(message.text[:6])
+            ^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '/minus'
+INFO:aiogram.event:Update id=732295328 is not handled. Duration 0 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295328 by bot id=7295199191
+ValueError: invalid literal for int() with base 10: '/minus'
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 42, in minus
+    money = int(message.text[:6])
+            ^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '/minus'
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295329 is handled. Duration 372 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295330 is handled. Duration 160 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295331 is not handled. Duration 0 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295332 is handled. Duration 447 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295333 is handled. Duration 1 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295334 is handled. Duration 204 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295335 is handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295336 is handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295337 is handled. Duration 181 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295338 is handled. Duration 280 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295339 is not handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295340 is handled. Duration 527 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295341 is not handled. Duration 0 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295342 is handled. Duration 280 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295343 is handled. Duration 1 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295344 is handled. Duration 292 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295345 is handled. Duration 267 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295346 is handled. Duration 116 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295347 is handled. Duration 111 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295348 is handled. Duration 183 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295349 is handled. Duration 287 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295350 is not handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295351 is not handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295352 is not handled. Duration 0 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295353 is handled. Duration 281 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295354 is not handled. Duration 144 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295354 by bot id=7295199191
+TypeError: write() argument must be str, not list
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 39, in minus
+    f.write(money)
+TypeError: write() argument must be str, not list
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295355 is handled. Duration 307 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295356 is not handled. Duration 219 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295356 by bot id=7295199191
+TypeError: write() argument must be str, not list
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 40, in minus
+    f.write(money)
+TypeError: write() argument must be str, not list
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295357 is handled. Duration 297 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295358 is not handled. Duration 164 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295358 by bot id=7295199191
+TypeError: write() argument must be str, not int
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 40, in minus
+    f.write(money)
+TypeError: write() argument must be str, not int
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295359 is handled. Duration 285 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295360 is handled. Duration 272 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295361 is handled. Duration 99 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295362 is not handled. Duration 285 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295362 by bot id=7295199191
+TypeError: write() argument must be str, not int
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 40, in minus
+    f.write(money)
+TypeError: write() argument must be str, not int
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295363 is not handled. Duration 302 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295363 by bot id=7295199191
+FileExistsError: [Errno 17] File exists: 'db.txt'
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 39, in minus
+    with open("db.txt", "x") as f:
+         ^^^^^^^^^^^^^^^^^^^
+FileExistsError: [Errno 17] File exists: 'db.txt'
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295364 is handled. Duration 272 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295365 is not handled. Duration 326 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295365 by bot id=7295199191
+ValueError: must have exactly one of create/read/write/append mode
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 39, in minus
+    with open("db.txt", "wr") as f:
+         ^^^^^^^^^^^^^^^^^^^^
+ValueError: must have exactly one of create/read/write/append mode
+INFO:aiogram.event:Update id=732295366 is handled. Duration 125 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295367 is not handled. Duration 193 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295367 by bot id=7295199191
+ValueError: must have exactly one of create/read/write/append mode
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 39, in minus
+    with open("db.txt", "wr") as f:
+         ^^^^^^^^^^^^^^^^^^^^
+ValueError: must have exactly one of create/read/write/append mode
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295368 is not handled. Duration 482 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295368 by bot id=7295199191
+UnsupportedOperation: not readable
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 40, in minus
+    prev = f.readline()
+           ^^^^^^^^^^^^
+io.UnsupportedOperation: not readable
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295369 is not handled. Duration 295 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295369 by bot id=7295199191
+UnsupportedOperation: not readable
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 40, in minus
+    prev = f.readline()
+           ^^^^^^^^^^^^
+io.UnsupportedOperation: not readable
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295370 is handled. Duration 279 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295371 is handled. Duration 96 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295372 is handled. Duration 191 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295373 is handled. Duration 99 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295374 is not handled. Duration 790 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295374 by bot id=7295199191
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 41, in minus
+    mon_prev = int(prev)
+               ^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+INFO:aiogram.event:Update id=732295375 is not handled. Duration 107 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295375 by bot id=7295199191
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 41, in minus
+    mon_prev = int(prev)
+               ^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295376 is handled. Duration 259 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295377 is handled. Duration 136 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295378 is handled. Duration 327 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295379 is handled. Duration 260 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295380 is handled. Duration 289 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295381 is handled. Duration 260 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295382 is handled. Duration 167 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295383 is handled. Duration 94 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295384 is not handled. Duration 0 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295385 is not handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295386 is not handled. Duration 282 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295386 by bot id=7295199191
+ValueError: must have exactly one of create/read/write/append mode
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 43, in minus
+    with open("db.txt", "rw") as f:
+         ^^^^^^^^^^^^^^^^^^^^
+ValueError: must have exactly one of create/read/write/append mode
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295387 is handled. Duration 271 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295388 is handled. Duration 277 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295389 is handled. Duration 282 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295390 is handled. Duration 461 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295391 is handled. Duration 303 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295392 is handled. Duration 398 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295393 is handled. Duration 92 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295394 is not handled. Duration 249 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295394 by bot id=7295199191
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 45, in minus
+    mon_prev = int(prev)
+               ^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295395 is handled. Duration 332 ms by bot id=7295199191
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295396 is handled. Duration 279 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295397 is handled. Duration 111 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295398 is handled. Duration 229 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295399 is not handled. Duration 131 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295399 by bot id=7295199191
+ValueError: invalid literal for int() with base 10: '\x00\x009\n'
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 41, in minus
+    mon_prev = int(prev)
+               ^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '\x00\x009\n'
+INFO:aiogram.event:Update id=732295400 is not handled. Duration 159 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295400 by bot id=7295199191
+ValueError: invalid literal for int() with base 10: '\x00\x009\n'
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 41, in minus
+    mon_prev = int(prev)
+               ^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '\x00\x009\n'
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295401 is handled. Duration 282 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295402 is handled. Duration 97 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295403 is not handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295404 is handled. Duration 239 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295405 is handled. Duration 147 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295406 is handled. Duration 264 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295407 is handled. Duration 107 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295408 is handled. Duration 129 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295409 is handled. Duration 174 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295410 is handled. Duration 109 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295411 is handled. Duration 440 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295412 is not handled. Duration 128 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295412 by bot id=7295199191
+ValueError: invalid literal for int() with base 10: '\x00\x00\x0099\n'
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 41, in minus
+    mon_prev = int(prev)
+               ^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '\x00\x00\x0099\n'
+INFO:aiogram.event:Update id=732295413 is not handled. Duration 128 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295413 by bot id=7295199191
+ValueError: invalid literal for int() with base 10: '\x00\x00\x0099\n'
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 41, in minus
+    mon_prev = int(prev)
+               ^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '\x00\x00\x0099\n'
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295414 is handled. Duration 288 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295415 is handled. Duration 284 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295416 is not handled. Duration 199 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295416 by bot id=7295199191
+ValueError: invalid literal for int() with base 10: '\x00\x00\x00\x0099\n'
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 42, in minus
+    mon_prev = int(prev)
+               ^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '\x00\x00\x00\x0099\n'
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295417 is handled. Duration 372 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295418 is handled. Duration 181 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295419 is not handled. Duration 311 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295419 by bot id=7295199191
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 42, in minus
+    mon_prev = int(prev)
+               ^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295420 is not handled. Duration 283 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295420 by bot id=7295199191
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 42, in minus
+    mon_prev = int(prev)
+               ^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295421 is not handled. Duration 357 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295421 by bot id=7295199191
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 42, in minus
+    mon_prev = int(prev)
+               ^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295422 is not handled. Duration 309 ms by bot id=7295199191
+ERROR:aiogram.event:Cause exception while process update id=732295422 by bot id=7295199191
+ValueError: invalid literal for int() with base 10: ''
+Traceback (most recent call last):
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/Users/wewq/all_code/bank/src/main.py", line 42, in minus
+    mon_prev = int(prev)
+               ^^^^^^^^^
+ValueError: invalid literal for int() with base 10: ''
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295423 is handled. Duration 248 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295424 is handled. Duration 90 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295425 is handled. Duration 138 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295426 is handled. Duration 89 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295427 is not handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295428 is handled. Duration 241 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295429 is handled. Duration 389 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295430 is handled. Duration 113 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295431 is handled. Duration 90 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295432 is handled. Duration 341 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295433 is handled. Duration 278 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295434 is handled. Duration 395 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295435 is handled. Duration 265 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295436 is handled. Duration 346 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295437 is handled. Duration 319 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295438 is handled. Duration 297 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295439 is handled. Duration 222 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295442 is not handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295444 is handled. Duration 257 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295443 is handled. Duration 276 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295440 is handled. Duration 304 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295441 is handled. Duration 317 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295445 is handled. Duration 337 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295446 is handled. Duration 318 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295447 is handled. Duration 0 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295448 is handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295449 is handled. Duration 356 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295450 is handled. Duration 204 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295451 is handled. Duration 0 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295452 is handled. Duration 0 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295453 is handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295454 is handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295455 is handled. Duration 0 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295456 is handled. Duration 0 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295457 is handled. Duration 0 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295458 is handled. Duration 0 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295459 is handled. Duration 235 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295460 is handled. Duration 259 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295461 is handled. Duration 90 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295462 is not handled. Duration 0 ms by bot id=7295199191
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295463 is handled. Duration 1 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295464 is handled. Duration 0 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295465 is handled. Duration 0 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295466 is handled. Duration 0 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295467 is handled. Duration 333 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295468 is handled. Duration 383 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295469 is handled. Duration 301 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295470 is handled. Duration 261 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
+DEBUG:asyncio:Using selector: KqueueSelector
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.event:Update id=732295471 is handled. Duration 325 ms by bot id=7295199191
+INFO:aiogram.event:Update id=732295472 is handled. Duration 298 ms by bot id=7295199191
+WARNING:aiogram.dispatcher:Received SIGINT signal
+INFO:aiogram.dispatcher:Polling stopped for bot @objak_bankbot id=7295199191 - 'общак'
+INFO:aiogram.dispatcher:Polling stopped
